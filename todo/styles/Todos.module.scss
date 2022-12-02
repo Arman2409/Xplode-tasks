@@ -1,0 +1,85 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .loadingCont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  .todoCont {
+    width: 800px;
+    height: 500px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+    .todoItem {
+      width: 100%;
+      height: 50px;
+      padding: 0 25px;
+      background-color: coral;
+      margin: 5px 0px;
+      border: 1px solid green;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .editCont{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .editInput{
+          height: 30px;
+          width: 150px;
+          margin-right: 5px;
+          background-color: lightcoral;
+        }
+        .editButton{
+          height: 30px;
+          width: 100px;
+          margin-left: auto;
+          justify-self: flex-end;
+        }
+      }
+      .todoTitle{
+        font-size: 25px;
+        color: firebrick;
+      }
+      .todoButton{
+        height: 40px;
+        margin-left: 50px;
+        width: 150px;
+        font-size: 14px;
+      }
+    }
+  }
+  .addCont{
+    height:100px;
+    width: 800px;
+    background-color: bisque;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .addInput {
+      margin: 0 15px;
+    }
+    .addInfo{
+      margin: 10px;
+    }
+  }
+}
+
